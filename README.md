@@ -27,3 +27,5 @@ GoogleInterchangeUtilities (1.2.1)
 GoogleSymbolUtilities (1.1.1)  
 GoogleUtilities (1.3.1)  
 LocalyticsStaticFramework (4.0.1)  
+
+Simulator/devices on iOS 8-8.4.1
