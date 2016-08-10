@@ -17,6 +17,10 @@ By default the autoIntegrate is OFF. And it will work. You can verify it by tapp
 
 At this point it doesn't matter if you have the Localytics autoIntegrate off or on, it will work regardless.
 
+***Possible issues**
+
+It might be that Google/Analytics (or one of the sub-pods it installs) changes some project setting that messes up something for Localytics. This is pure speculation though.
+
 **Currently I have these versions**
 
 FirebaseAnalytics (3.3.0)  
