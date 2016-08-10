@@ -15,13 +15,15 @@ By default the autoIntegrate is OFF. And it will work. You can verify it by tapp
 3. Run the app again and tap the link
 4. Now the iOS 8 methods will NSLog in the console
 
+At this point it doesn't matter if you have the Localytics autoIntegrate off or on, it will work regardless.
+
 **Currently I have these versions**
 
-FirebaseAnalytics (3.3.0)
-FirebaseInstanceID (1.0.8)
-Google (3.0.3)
-GoogleAnalytics (3.16.0)
-GoogleInterchangeUtilities (1.2.1)
-GoogleSymbolUtilities (1.1.1)
-GoogleUtilities (1.3.1)
-LocalyticsStaticFramework (4.0.1)
+FirebaseAnalytics (3.3.0)  
+FirebaseInstanceID (1.0.8)  
+Google (3.0.3)  
+GoogleAnalytics (3.16.0)  
+GoogleInterchangeUtilities (1.2.1)  
+GoogleSymbolUtilities (1.1.1)  
+GoogleUtilities (1.3.1)  
+LocalyticsStaticFramework (4.0.1)  
