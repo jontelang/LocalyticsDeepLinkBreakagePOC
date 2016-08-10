@@ -8,20 +8,13 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    UIWebView *v = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [v loadHTMLString:@"<a href='breakdeeplink://page/'>click me for deeplink action</a>" baseURL:nil];
+    [self.view addSubview:v];
 }
 
 @end

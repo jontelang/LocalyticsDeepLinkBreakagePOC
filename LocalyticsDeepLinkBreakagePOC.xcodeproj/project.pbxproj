@@ -13,9 +13,11 @@
 		4D76E0271D5AEDF9001FDBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D76E0251D5AEDF9001FDBBA /* Main.storyboard */; };
 		4D76E0291D5AEDF9001FDBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D76E0281D5AEDF9001FDBBA /* Assets.xcassets */; };
 		4D76E02C1D5AEDF9001FDBBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D76E02A1D5AEDF9001FDBBA /* LaunchScreen.storyboard */; };
+		85BDBA4E5A6794AE99DAFC6D /* libPods-LocalyticsDeepLinkBreakagePOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B01EB035C2ECC0728A0D30D /* libPods-LocalyticsDeepLinkBreakagePOC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32CF28F3BA932803F6076D1E /* Pods-LocalyticsDeepLinkBreakagePOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalyticsDeepLinkBreakagePOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocalyticsDeepLinkBreakagePOC/Pods-LocalyticsDeepLinkBreakagePOC.release.xcconfig"; sourceTree = "<group>"; };
 		4D76E0191D5AEDF9001FDBBA /* LocalyticsDeepLinkBreakagePOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalyticsDeepLinkBreakagePOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D76E01D1D5AEDF9001FDBBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D76E01F1D5AEDF9001FDBBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		4D76E0281D5AEDF9001FDBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D76E02B1D5AEDF9001FDBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D76E02D1D5AEDF9001FDBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B01EB035C2ECC0728A0D30D /* libPods-LocalyticsDeepLinkBreakagePOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalyticsDeepLinkBreakagePOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB8D1FE030C85CDEA53E0B4 /* Pods-LocalyticsDeepLinkBreakagePOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalyticsDeepLinkBreakagePOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalyticsDeepLinkBreakagePOC/Pods-LocalyticsDeepLinkBreakagePOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85BDBA4E5A6794AE99DAFC6D /* libPods-LocalyticsDeepLinkBreakagePOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				4D76E01B1D5AEDF9001FDBBA /* LocalyticsDeepLinkBreakagePOC */,
 				4D76E01A1D5AEDF9001FDBBA /* Products */,
+				9006E93330622A31D982BF1E /* Pods */,
+				ABC35B44AE7DF6A9C8B2E195 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9006E93330622A31D982BF1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CB8D1FE030C85CDEA53E0B4 /* Pods-LocalyticsDeepLinkBreakagePOC.debug.xcconfig */,
+				32CF28F3BA932803F6076D1E /* Pods-LocalyticsDeepLinkBreakagePOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABC35B44AE7DF6A9C8B2E195 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B01EB035C2ECC0728A0D30D /* libPods-LocalyticsDeepLinkBreakagePOC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D76E0301D5AEDF9001FDBBA /* Build configuration list for PBXNativeTarget "LocalyticsDeepLinkBreakagePOC" */;
 			buildPhases = (
+				28286DE456BD5D7BEF254F77 /* [CP] Check Pods Manifest.lock */,
 				4D76E0151D5AEDF9001FDBBA /* Sources */,
 				4D76E0161D5AEDF9001FDBBA /* Frameworks */,
 				4D76E0171D5AEDF9001FDBBA /* Resources */,
+				72EDC3140907F610C6A64081 /* [CP] Embed Pods Frameworks */,
+				23C16236B66529329C856774 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23C16236B66529329C856774 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocalyticsDeepLinkBreakagePOC/Pods-LocalyticsDeepLinkBreakagePOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28286DE456BD5D7BEF254F77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72EDC3140907F610C6A64081 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocalyticsDeepLinkBreakagePOC/Pods-LocalyticsDeepLinkBreakagePOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D76E0151D5AEDF9001FDBBA /* Sources */ = {
@@ -259,9 +334,11 @@
 		};
 		4D76E0311D5AEDF9001FDBBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB8D1FE030C85CDEA53E0B4 /* Pods-LocalyticsDeepLinkBreakagePOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocalyticsDeepLinkBreakagePOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.LocalyticsDeepLinkBreakagePOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +347,11 @@
 		};
 		4D76E0321D5AEDF9001FDBBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CF28F3BA932803F6076D1E /* Pods-LocalyticsDeepLinkBreakagePOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocalyticsDeepLinkBreakagePOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.LocalyticsDeepLinkBreakagePOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +377,7 @@
 				4D76E0321D5AEDF9001FDBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

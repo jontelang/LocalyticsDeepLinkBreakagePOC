@@ -1,0 +1,1 @@
+../../../../LocalyticsStaticFramework/Localytics-iOS-4.0.1/Localytics.framework/Headers/LLInboxDetailViewController.h

@@ -7,16 +7,13 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
-
-@end
+#import <Localytics/Localytics.h>
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //[Localytics autoIntegrate:@"some_id" launchOptions:launchOptions];
     return YES;
 }
 
@@ -40,6 +37,23 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(nonnull NSURL *)url {
+    // If openURL:sourceApplication:.. is implemented, this should be not called
+    NSLog(@"handleOpenURL: %@ ", url);
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(nonnull id)annotation {
+    NSLog(@"openURL:sourceAppl:... %@ ", url);
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options {
+    // This is iOS 9 so should be called in iOS 9 only
+    NSLog(@"openURL:options: %@", url);
+    return YES;
 }
 
 @end
